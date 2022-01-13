@@ -1,6 +1,6 @@
 function result(firstNumber, lastNumber) {
 
-    alert(getSum() );
+    console.log(getSum() );
    
   
     function getSum() {

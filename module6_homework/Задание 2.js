@@ -1,22 +1,19 @@
 
-function numbers(){
+function numbers(i){
     
-i=prompt("Число");
-        for (let j = 2; j < i; j++) {
-            if (i % j !== 0 && i!==0 && i<=1000 && i==2) {
-console.log ("Число простое");
-break;
-}   
 
-else if (i>1000 && i==0) {
-    console.log ("Данные неверные");
-    break;
+        for (let j = 2; j <= i; j++) {
+            if (i % j !== 0 && i <= 1000 || i==2) {
+return "Число простое"
+
+}   
+else if (i%j==0 && i <= 1000) {
+    return"Число составное";
+}
+else {
+    return "Слишком большое число"
 }
 
-            else  {
-                console.log ("Число составное");
-                break;
-            }
-     }
- }
-numbers()
+        }
+    }
+numbers(13)
